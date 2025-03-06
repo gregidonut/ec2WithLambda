@@ -8,6 +8,8 @@ to specify a language version all the time
 
 ## build
 
+you might need to `chmod +x ./build.sh`
+
 i have simple `zsh` script that builds a binary named
 `bootstrap` and then compresses this in a zip using `7z`
 
