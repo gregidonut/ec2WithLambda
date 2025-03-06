@@ -20,9 +20,8 @@ fi
 
 GOOS=linux GOARCH=amd64 CGO_ENABLED=0 \
 go build -o bin/"$1"/bootstrap cmd/"$1"/main.go && \
-echo "completing building binary at $1/bootstrap"; \
+echo "completed building binary at $1/bootstrap"; \
 chmod +x bin/"$1"/bootstrap && \
 rm dist/"$1".zip;
 cd bin/"$1" && \
 7z a -tzip -mx=9 ../../dist/"$1".zip bootstrap;
-cd ..
